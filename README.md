@@ -40,4 +40,4 @@ To create a new super user you can run commant below
 docker exec -it casepro_app_1 python manage.py createsuperuser
 ```
 
-Obs: confirm the container name before run this command;
+Obs: confirm the container name before run this command
