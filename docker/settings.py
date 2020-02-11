@@ -1,10 +1,6 @@
-# import our default settings
 from casepro.settings_common import *  # noqa
 
 ALLOWED_HOSTS = ["localhost", ".localhost"]
-
-# INSTALLED_APPS = INSTALLED_APPS + ('debug_toolbar.apps.DebugToolbarConfig',)
-# MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
 
 DEBUG = True
 
@@ -19,7 +15,7 @@ DATABASES = {
         "USER": "casepro",
         "PASSWORD": "nyaruka",
         "HOST": "db",
-        "PORT": "",
+        "PORT": "5432",
         "ATOMIC_REQUESTS": True,
         "OPTIONS": {},
     }

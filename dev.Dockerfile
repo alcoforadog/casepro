@@ -7,17 +7,16 @@ RUN apt-get update && apt-get upgrade -y \
         -o Dpkg::Options::="--force-confold"
 
 RUN apt-get install -y --no-install-recommends \
-        ca-certificates \
-        curl \
-        gcc \
         python-dev \
-        python3-dev \
         nodejs \
         node-less
 
 WORKDIR /usr/src/app
 
 COPY . .
+
+RUN npm install -g \
+        coffee-script
 
 RUN npm install        
 
